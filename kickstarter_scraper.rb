@@ -17,9 +17,7 @@ def create_project_hash
         projects[title.to_sym] = {}
     end
 
-  html = File.read("fixtures/kickstarter.html")
-  kickstarter = Nokogiri::HTML(html)
-  binding.pry
+    projects
 end
 
 create_project_hash
